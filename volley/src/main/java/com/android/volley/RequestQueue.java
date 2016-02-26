@@ -125,6 +125,14 @@ public class RequestQueue {
                 new ExecutorDelivery(new Handler(Looper.getMainLooper())));
     }
 
+    public RequestQueue(Cache cache, Network network, Handler handler) {
+        this(cache, network, DEFAULT_NETWORK_THREAD_POOL_SIZE, handler);
+    }
+
+    public RequestQueue(Cache cache, Network network, int threadPoolSize, Handler handler) {
+        this(cache, network, threadPoolSize, new ExecutorDelivery(handler));
+    }
+
     /**
      * Creates the worker pool. Processing will not begin until {@link #start()} is called.
      *
