@@ -6,7 +6,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import assignment.app.com.assignmentr2.R;
+import com.app.assignmentr2.R;
 
 public class ActivityWordAndMeaning extends AppCompatActivity {
 
