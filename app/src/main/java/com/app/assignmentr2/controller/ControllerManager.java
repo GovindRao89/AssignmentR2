@@ -17,6 +17,7 @@ import com.app.assignmentr2.transport.TransportType;
 import com.app.assignmentr2.transport.TransportManager;
 
 public class ControllerManager {
+
     private static final String TAG = ControllerManager.class.getSimpleName();
     private static int requestId = 0;
     private Context mContext;
@@ -69,8 +70,7 @@ public class ControllerManager {
     /**
      * Adds a listener to the {@link #mListenersMap} so that callback can be
      * sent properly to the right listener.
-     *
-     * @param url against which listener needs to be added into the
+     * @param requestId against which listener needs to be added into the
      *            {@link #mListenersMap}.
      * @param listener which needs to be added into the {@link #mListenersMap}.
      */
@@ -90,10 +90,8 @@ public class ControllerManager {
     /**
      * Removes a listener to the {@link #mListenersMap} so that callback will
      * not be recieved by listener as now he don't wants to.
-     *
-     * @param url against which listener needs to be removed from the
+     * @param requestId against which listener needs to be removed from the
      *            {@link #mListenersMap}.
-     * @param listener which needs to be removed from the {@link #mListenersMap}
      */
     public void removeListener(int requestId) {
         synchronized (mListenersMap) {
@@ -138,12 +136,9 @@ public class ControllerManager {
      */
     private void initialize() {
         Log.d(TAG, "Initialization started ..........");
-
         mhThread = new MainThread("Parental Control Processor");
         mhThread.start();
-
         mHandler = new MainHandler(this, mhThread.getLooper());
-
         Log.d(TAG, "Initialization done.");
     }
 
