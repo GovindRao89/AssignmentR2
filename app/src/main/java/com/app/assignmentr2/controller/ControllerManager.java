@@ -1,9 +1,6 @@
 
 package com.app.assignmentr2.controller;
 
-import java.lang.ref.WeakReference;
-import java.util.concurrent.ConcurrentHashMap;
-
 import android.content.Context;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -13,8 +10,11 @@ import android.util.Log;
 import android.util.SparseArray;
 
 import com.app.assignmentr2.transport.TransportFactory;
-import com.app.assignmentr2.transport.TransportType;
 import com.app.assignmentr2.transport.TransportManager;
+import com.app.assignmentr2.transport.TransportType;
+
+import java.lang.ref.WeakReference;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class ControllerManager {
 
@@ -70,9 +70,10 @@ public class ControllerManager {
     /**
      * Adds a listener to the {@link #mListenersMap} so that callback can be
      * sent properly to the right listener.
+     *
      * @param requestId against which listener needs to be added into the
-     *            {@link #mListenersMap}.
-     * @param listener which needs to be added into the {@link #mListenersMap}.
+     *                  {@link #mListenersMap}.
+     * @param listener  which needs to be added into the {@link #mListenersMap}.
      */
     public void addListener(int requestId, ControllerCallback listener) {
         if (listener == null) {
@@ -89,9 +90,10 @@ public class ControllerManager {
 
     /**
      * Removes a listener to the {@link #mListenersMap} so that callback will
-     * not be recieved by listener as now he don't wants to.
+     * not be received by listener as off now he don't wants to.
+     *
      * @param requestId against which listener needs to be removed from the
-     *            {@link #mListenersMap}.
+     *                  {@link #mListenersMap}.
      */
     public void removeListener(int requestId) {
         synchronized (mListenersMap) {
@@ -174,7 +176,7 @@ public class ControllerManager {
         }
 
         void unregister(int eventId) {
-            Log.d(TAG, "Unregistering Handler " + eventId);
+            Log.d(TAG, "Un-registering Handler " + eventId);
             mHandlerList.remove(eventId);
         }
 

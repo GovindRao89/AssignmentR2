@@ -1,5 +1,7 @@
 package com.app.assignmentr2.model;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by Govind on 27-02-2016.
  */
@@ -10,6 +12,25 @@ public class Words {
     private String word = "";
     private String meaning = "";
     private String variant = "";
+    private String uri;
+    private byte[] bitmap;
+
+
+    public String getUri() {
+        return uri;
+    }
+
+    public void setUri(String uri) {
+        this.uri = uri;
+    }
+
+    public byte[] getBitmap() {
+        return bitmap;
+    }
+
+    public void setBitmap(byte[] bitmap) {
+        this.bitmap = bitmap;
+    }
 
     public String getId() {
         return id;
@@ -59,6 +80,7 @@ public class Words {
                 ", word='" + word + '\'' +
                 ", meaning='" + meaning + '\'' +
                 ", variant='" + variant + '\'' +
+                ", uri=" + uri +
                 '}';
     }
 }

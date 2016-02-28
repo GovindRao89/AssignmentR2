@@ -2,7 +2,6 @@ package com.app.assignmentr2.transport;
 
 import android.content.Context;
 import android.util.Log;
-
 import com.app.assignmentr2.controller.ControllerManager;
 
 public class TransportFactory {

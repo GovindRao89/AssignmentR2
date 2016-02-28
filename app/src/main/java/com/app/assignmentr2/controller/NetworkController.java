@@ -33,6 +33,4 @@ public class NetworkController {
         cm.addListener(requestId, listener);
         return requestId;
     }
-
-
 }
