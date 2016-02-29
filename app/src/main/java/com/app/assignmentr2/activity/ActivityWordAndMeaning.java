@@ -26,6 +26,9 @@ import com.app.assignmentr2.model.Words;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by Govind on 28-02-2016.
+ */
 public class ActivityWordAndMeaning extends AppCompatActivity {
 
     private static final String TAG = "ActivityWordAndMeaning";

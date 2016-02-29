@@ -13,6 +13,9 @@ import android.database.sqlite.SQLiteQuery;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.util.Log;
 
+/**
+ * Created by Govind on 28-02-2016.
+ */
 public class SqLiteDataFetcher {
 
     private ProjectDatabaseHelper mDatabaseHelper;

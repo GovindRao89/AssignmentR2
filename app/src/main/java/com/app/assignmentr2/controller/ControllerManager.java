@@ -16,6 +16,9 @@ import com.app.assignmentr2.transport.TransportType;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Created by Govind on 28-02-2016.
+ */
 public class ControllerManager {
 
     private static final String TAG = ControllerManager.class.getSimpleName();

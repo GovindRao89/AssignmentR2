@@ -1,7 +1,9 @@
 package com.app.assignmentr2.utility;
 
+/**
+ * Created by Govind on 28-02-2016.
+ */
 public class HttpMethods {
-
     public static final int DEPRECATED_GET_OR_POST = -1;
     public static final int GET = 0;
     public static final int POST = 1;

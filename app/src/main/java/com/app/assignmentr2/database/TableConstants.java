@@ -1,7 +1,9 @@
 package com.app.assignmentr2.database;
 
-import android.graphics.Bitmap;
 
+/**
+ * Created by Govind on 28-02-2016.
+ */
 public class TableConstants {
 	public interface WordsColumn {
 		String ID = "_id";

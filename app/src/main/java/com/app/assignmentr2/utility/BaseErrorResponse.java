@@ -1,7 +1,9 @@
 
 package com.app.assignmentr2.utility;
 
-
+/**
+ * Created by Govind on 28-02-2016.
+ */
 public class BaseErrorResponse {
 
     private String mErrorCode = "";

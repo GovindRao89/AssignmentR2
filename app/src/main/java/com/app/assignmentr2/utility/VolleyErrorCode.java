@@ -9,6 +9,9 @@ import com.android.volley.ServerError;
 import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 
+/**
+ * Created by Govind on 28-02-2016.
+ */
 public class VolleyErrorCode {
     public static int getErrorCode(VolleyError error) {
         if (error instanceof NetworkError) {
